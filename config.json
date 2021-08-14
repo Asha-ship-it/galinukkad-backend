@@ -1,0 +1,6 @@
+{
+    "db_uri":"mongodb://localhost/martfury",
+    "jwd_secret":"ilovecatratbatsatall",
+    "ROLES":["CUSTOMER","SELLER","ADMIN","GUEST"],
+    "basepath":"http://35.154.41.84:8080/"
+}

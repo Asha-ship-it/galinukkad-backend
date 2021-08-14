@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+function getSuccessOutput() {
+    $.ajax({
+        url:'http://15.206.229.22:3000/signup',
+        method:'post',
+        complete: function (response) {
+            $('#output').html(response.responseText);
+        },
+        error: function () {
+            $('#output').html('Bummer: there was an error!');
+        },
+    });
+    return false;
+}
+
+</script>
+</head>
+<a href="#" onclick="return getSuccessOutput();"> test success </a>
+</html>
